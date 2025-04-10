@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up - Online Therapy</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- My CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Skip link -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Online Therapy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="signup.html">Sign Up</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <!-- Signup Header -->
+    <section class="about-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1>Sign Up</h1>
+            <p class="subtitle">Begin your journey to better mental health today</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Signup Form -->
+    <section class="signup-section py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card shadow">
+              <div class="card-body p-4 p-md-5">
+                <h2 class="text-center mb-4">Create Your Account</h2>
+
+                <!-- Signup Progress -->
+                <div class="signup-progress mb-5">
+                  <div class="row text-center">
+                    <div class="col-4">
+                      <div class="progress-step active">
+                        <span class="step-number">1</span>
+                        <span class="step-text d-none d-md-block">Account</span>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="progress-step">
+                        <span class="step-number">2</span>
+                        <span class="step-text d-none d-md-block">Preferences</span>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="progress-step">
+                        <span class="step-number">3</span>
+                        <span class="step-text d-none d-md-block">Payment</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Signup Form -->
+                <form id="signupForm" action="#" method="post">
+                  <div class="row g-3">
+                    <div class="col-12"><h3>Personal Information</h3></div>
+
+                    <div class="col-md-6">
+                      <label for="firstName" class="form-label">First Name</label>
+                      <input type="text" class="form-control" id="firstName" name="firstName" required>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="lastName" class="form-label">Last Name</label>
+                      <input type="text" class="form-control" id="lastName" name="lastName" required>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="email" name="email" required>
+                      <div class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="phone" class="form-label">Phone Number</label>
+                      <input type="tel" class="form-control" id="phone" name="phone">
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="password" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="password" name="password" required>
+                      <div class="form-text">At least 8 characters with letters and numbers.</div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="confirmPassword" class="form-label">Confirm Password</label>
+                      <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+
+                    <div class="col-12 mt-4">
+                      <h3>Account Type</h3>
+                      <p>Select the plan that fits your needs:</p>
+
+                      <div class="form-check mb-3 border p-3 rounded">
+                        <input class="form-check-input" type="radio" name="plan" id="basicPlan" value="basic">
+                        <label class="form-check-label w-100" for="basicPlan">
+                          <strong>Basic Plan - $79/month</strong>
+                          <p class="mb-0">1 session per month, text message support, digital resources</p>
+                        </label>
+                      </div>
+
+                      <div class="form-check mb-3 border p-3 rounded border-primary">
+                        <input class="form-check-input" type="radio" name="plan" id="standardPlan" value="standard" checked>
+                        <label class="form-check-label w-100" for="standardPlan">
+                          <strong>Standard Plan - $129/month</strong>
+                          <span class="badge bg-warning">Most Popular</span>
+                          <p class="mb-0">2 sessions per month, unlimited text support, priority scheduling</p>
+                        </label>
+                      </div>
+
+                      <div class="form-check mb-3 border p-3 rounded">
+                        <input class="form-check-input" type="radio" name="plan" id="premiumPlan" value="premium">
+                        <label class="form-check-label w-100" for="premiumPlan">
+                          <strong>Premium Plan - $199/month</strong>
+                          <p class="mb-0">4 sessions per month, unlimited text support, priority scheduling, emergency support</p>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="col-12 mt-4">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="termsAgreement" name="termsAgreement" required>
+                        <label class="form-check-label" for="termsAgreement">
+                          I agree to the <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="col-12 mt-4">
+                      <button type="submit" class="btn btn-primary btn-lg w-100">Continue to Preferences</button>
+                    </div>
+                  </div>
+                </form>
+
+                <div class="text-center mt-4">
+                  <p>Already have an account? <a href="login.html">Log In</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion" id="signupFAQ">
+          <!-- FAQ 1 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="faqHeadingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+                How soon can I start therapy after signing up?
+              </button>
+            </h3>
+            <div id="faqOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#signupFAQ">
+              <div class="accordion-body">
+                You can typically book your first session within 24–48 hours.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="faqHeadingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                Can I change my subscription plan later?
+              </button>
+            </h3>
+            <div id="faqTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#signupFAQ">
+              <div class="accordion-body">
+                Yes, you can change plans anytime from your account dashboard.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="faqHeadingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                Is my information secure?
+              </button>
+            </h3>
+            <div id="faqThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#signupFAQ">
+              <div class="accordion-body">
+                Yes, all your information is encrypted and secure.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+      <p>&copy; 2025 Online Therapy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
